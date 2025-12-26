@@ -151,8 +151,8 @@ export default function StyrofoamShame() {
     <div className="min-h-screen bg-gradient-to-br from-red-50 via-white to-orange-50">
       {/* Header */}
       <header className="bg-red-600 text-white shadow-lg">
-        <div className=" mx-auto px-4 py-8">
-          <h1 className="text-5xl font-bold mb-2">🚫 Fuck Styrofoam</h1>
+        <div className="mx-auto px-4 py-8">
+          <h1 className="text-5xl font-bold mb-2">Fuck Styrofoam</h1>
           <p className="text-xl text-red-100">
             Calling out companies that pollute with polystyrene packaging
           </p>
@@ -547,6 +547,7 @@ export default function StyrofoamShame() {
               Expanded Polystyrene (EPS) foam used in packaging, which is
               technically different but commonly called "styrofoam."
             </p>
+            <p>Contact me at <a href="mailto:daltcarr@gmail.com" className="text-blue-400 underline">daltcarr@gmail.com</a></p>
           </div>
         </div>
       </footer>
