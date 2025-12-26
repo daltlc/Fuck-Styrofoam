@@ -1,5 +1,6 @@
 import React, { useState, useMemo, useEffect } from "react";
 import { Search, AlertCircle, Package, CheckCircle } from "lucide-react";
+import { profanity } from '@2toad/profanity';
 
 interface Company {
   id: number;
@@ -61,6 +62,11 @@ export default function StyrofoamShame() {
   ): Promise<void> => {
     e.preventDefault();
     setSubmitStatus("submitting");
+
+    if(profanity.exists(formData.name) || profanity.exists(formData.products) || profanity.exists(formData.notes)) {
+      setSubmitStatus("error");
+      return;
+    }
 
     try {
       const response = await fetch("/.netlify/functions/submit-company", {
