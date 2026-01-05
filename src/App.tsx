@@ -408,8 +408,8 @@ export default function StyrofoamShame() {
             >
               <div
                 className={`p-4 border-l-4 ${getSeverityColor(
-                  company.severity
-                )}`}
+                  company.severity 
+                )} h-full`}
               >
                 <div className="flex items-start justify-between mb-2">
                   <div>
